@@ -3,8 +3,8 @@ const Navigation = () => {
     return (
     <nav>
         <div className="social">
-            <img src="../../public/github.png" alt="github" />
-            <img src="../../public/linkedin.png" alt="linkedin" />
+            <img src="/github.png" alt="github" />
+            <img src="/linkedin.png" alt="linkedin" />
         </div>
         <ul className="navbar">
             <li><a href="#top">Home</a></li>

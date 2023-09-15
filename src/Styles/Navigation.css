@@ -54,11 +54,11 @@ nav {
 }
 
 
-li:hover {
+.navbar li:hover {
     cursor: pointer;
 }
 
-li::after {
+.navbar li::after {
     content: "";
     display: block;
     width: 0%;
@@ -68,7 +68,7 @@ li::after {
 }
 
 
-li:hover::after {
+.navbar li:hover::after {
     width: 100%;
 }
 

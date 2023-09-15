@@ -1,16 +1,22 @@
+import { TypeAnimation } from "react-type-animation"
 import "../Styles/Home.css"
 const Home = () => {
     return (
     <div className="home" id="home">
         <div className="home-content">
-            <div className="card-text">
-                <h1 className="dynamic-text-l1">Hi! I'm Jason</h1>
-                <h2 className="dynamic-text-l2">Software Engineer</h2>
-                <p className="dynamic-text-l3">Studied at Stony Brook University</p>
-                <p className="dynamic-text-l4">Graduated with B.S. in Computer Science</p>
-                <p className="dynamic-text-l5">Actively pursuing a career in Software</p>
+            <div className="type-card">
+                <TypeAnimation
+                    style={{ whiteSpace: 'pre-line', height: '195px', display: 'block', fontSize: '1.8rem' }}
+                    sequence={[
+                        `Hi! I'm Jason\nSoftware Engineer\nStudied at Stony Brook University\nGraduated with B.S. in Computer Science\nActively pursuing a career in Software`,
+                        1,
+                        ]}
+                    repeat={Infinity}
+                    deletionSpeed={99}
+                    speed={70}
+                />
             </div>
-            <img className="home-img" src="../../public/computer_image.jpg" height={600}/>
+            <img className="home-img" src="/computer_image.jpg" height={600}/>
         </div>
     </div>)
 }
